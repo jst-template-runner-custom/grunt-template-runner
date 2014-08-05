@@ -67,20 +67,7 @@ module.exports = function(grunt) {
                           'test/fixtures/folder/test2.hbs', 
                           'test/fixtures/folder/test3.md'],
         },
-      },
-//      gettext: {
-//          options: {
-//            locales: ['en', 'fr'],
-//            directory: 'test/gettext',
-//            gettext: 'default',
-//            gettext_suffix: 'po'
-//          },
-//          files: {
-//            'tmp/fg/': ['test/fixtures/folder/test1.html', 
-//                        'test/fixtures/folder/test2.hbs', 
-//                        'test/fixtures/folder/test3.md'],
-//          },
-//        },
+      }
     },
 
     // Unit tests.
