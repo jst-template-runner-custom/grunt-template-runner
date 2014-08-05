@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    template_runner: {
+    template_runner_custom: {
       bare_template: {
         options: {
           i18n: false,
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
 
   // Whenever the "test" task is run, first clean the "tmp" dir, then run this
   // plugin's task(s), then test the result.
-  grunt.registerTask('test', ['clean', 'template_runner', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'template_runner_custom', 'nodeunit']);
 
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test']);
