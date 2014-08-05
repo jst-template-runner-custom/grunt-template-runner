@@ -1,6 +1,6 @@
 {
     "name": "grunt-template-runner-custom",
-    "description": "Runs templates and i18n at grunt's compile time. Customized version without gettext and iconv",
+    "description": "Runs templates and i18n at grunt's compile time (Customized version without gettext and iconv)",
     "version": "0.1.0",
     "homepage": "https://github.com/jst-template-runner-custom/grunt-template-runner",
     "author": {
