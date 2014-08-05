@@ -11,9 +11,6 @@
 module.exports = function(grunt) {
 
     var i18n = require("i18n");
-//  var fs = require('fs');
-//  var Gettext = require("node-gettext");
-
     var _ = grunt.util._;
 
 
@@ -23,8 +20,6 @@ module.exports = function(grunt) {
             locales: [],
             directory: 'locales',
             extension: null,
-//      gettext: null,
-//      gettext_suffix: 'mo',
             data: {},
             variable: null // Avoid underscore's template to use "with(...)"
         });
@@ -39,9 +34,6 @@ module.exports = function(grunt) {
             _.templateSettings.variable = options.variable;
         }
 
-        // gettext
-//        var gt = null;
-
         // if i18n active
         if (options.i18n) {
             if (options.locales.length < 1 || options.locales[0].length < 1) {
@@ -52,19 +44,6 @@ module.exports = function(grunt) {
                 interpolate: /(_\(.+?\))/g
             };
 
-//      if(options.gettext){
-//          gt = new Gettext();
-//          var prefix = options.directory + '/' + options.gettext;
-//          options.locales.forEach(function(lng) {
-//              var gtfile = prefix + '_' + lng + '.' + options.gettext_suffix;
-//              if(grunt.file.exists(gtfile)){
-//                  var fileContents = fs.readFileSync(gtfile);
-//                  gt.addTextdomain(lng, fileContents);
-//              } else {
-//                  grunt.log.warn('Translation file not found for language "' + lng + '" (file "' + gtfile + '").');
-//              }
-//          });
-//      }
         }
 
         var languages = (options.locales.length < 1) ? [''] : options.locales;
@@ -72,16 +51,11 @@ module.exports = function(grunt) {
         // For each language
         languages.forEach(function(lng) {
             if (options.i18n) {
-//          if(gt){
-//            gt.textdomain(lng);
-//          }
-//          else {
                 i18n.configure({
                     locales: options.locales,
                     directory: options.directory,
                     defaultLocale: lng
                 });
-//          }
             }
 
             // Iterate over all specified file groups.
@@ -99,13 +73,7 @@ module.exports = function(grunt) {
                     // Read source template.
                     var compiled = _.template(grunt.file.read(filepath));
                     var data = options.data;
-//            if(gt){
-//              data._ = function(f) {
-//                  return gt.gettext(f);
-//              };
-//            } else {
                     data._ = i18n.__;
-//            }
                     return compiled(data);
                 });
 
