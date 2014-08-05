@@ -20,17 +20,17 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-template-runner-custom');
 ```
 
-## The "template_runner_custom" task
+## The "template_runner_custom_custom" task
 _Run this task with the `grunt less` command._
 
 Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
 
 ### Overview
-In your project's Gruntfile, add a section named `template_runner` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `template_runner_custom` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  template_runner: {
+  template_runner_custom: {
     basic: {
       options: {
         // Task-specific options go here.
@@ -112,7 +112,7 @@ Here is a sample execution case of the following configuration :
 
 ```js
 grunt.initConfig({
-  template_runner: {
+  template_runner_custom: {
     options: {
       locales: ['en', 'fr'],
       directory: 'locales'
@@ -131,7 +131,7 @@ As the destination isn't a single file, each source file will generate a new fil
 
 ```js
 grunt.initConfig({
-  template_runner: {
+  template_runner_custom: {
     options: {
       locales: ['en'],
       directory: 'locales'
@@ -149,7 +149,7 @@ This example shows how to use gettext's mo translation files. The `gettext` opti
 
 ```js
 grunt.initConfig({
-  template_runner: {
+  template_runner_custom: {
     options: {
       locales: ['en', 'fr'],
       directory: 'locales',
@@ -172,7 +172,7 @@ If source contains `Plain text template <%= name %>` the result of the following
 
 ```js
 grunt.initConfig({
-  template_runner: {
+  template_runner_custom: {
     options: {
       i18n: false,
       data: {name : 'Erik'}
