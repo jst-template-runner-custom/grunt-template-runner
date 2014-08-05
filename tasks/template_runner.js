@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     var _ = grunt.util._;
 
 
-    grunt.registerMultiTask('template_runner', 'Your task description goes here.', function() {
+    grunt.registerMultiTask('template_runner_custom', 'Your task description goes here.', function() {
         var options = this.options({
             i18n: true,
             locales: [],

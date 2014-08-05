@@ -22,7 +22,7 @@ var grunt = require('grunt');
  test.ifError(value)
  */
 
-exports.template_runner = {
+exports.template_runner_custom = {
     setUp: function(done) {
         done();
     },
