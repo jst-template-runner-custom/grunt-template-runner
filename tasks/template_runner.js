@@ -1,5 +1,5 @@
 /*
- * grunt-template-runner
+ * grunt-template-runner (customized version without gettext and iconv)
  * https://github.com/ErikLoubal/grunt-template-runner
  *
  * Copyright (c) 2013 Erik Loubal

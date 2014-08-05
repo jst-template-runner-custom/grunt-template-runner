@@ -1,23 +1,23 @@
 {
-    "name": "grunt-template-runner",
-    "description": "Runs templates and i18n at grunt's compile time.",
-    "version": "0.2.1",
-    "homepage": "https://github.com/ErikLoubal/grunt-template-runner",
+    "name": "grunt-template-runner-custom",
+    "description": "Runs templates and i18n at grunt's compile time. Customized version without gettext and iconv",
+    "version": "0.1.0",
+    "homepage": "https://github.com/jst-template-runner-custom/grunt-template-runner",
     "author": {
         "name": "Erik Loubal",
         "email": "erik.loubal@gmx.com"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ErikLoubal/grunt-template-runner.git"
+        "url": "https://github.com/jst-template-runner-custom/grunt-template-runner.git"
     },
     "bugs": {
-        "url": "https://github.com/ErikLoubal/grunt-template-runner/issues"
+        "url": "https://github.com/jst-template-runner-custom/grunt-template-runner/issues"
     },
     "licenses": [
         {
             "type": "MIT",
-            "url": "https://github.com/ErikLoubal/grunt-template-runner/blob/master/LICENSE-MIT"
+            "url": "https://github.com/jst-template-runner-custom/grunt-template-runner/blob/master/LICENSE-MIT"
         }
     ],
     "main": "Gruntfile.js",
