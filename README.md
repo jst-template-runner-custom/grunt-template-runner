@@ -20,7 +20,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-template-runner-custom');
 ```
 
-## The "template_runner" task
+## The "template_runner_custom" task
 _Run this task with the `grunt less` command._
 
 Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
